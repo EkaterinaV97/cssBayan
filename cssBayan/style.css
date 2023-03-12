@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(219, 203, 167);
     font-family: Arial, sans-serif;
     font-size: 25px;
     line-height: 1.5;
@@ -15,7 +15,7 @@ h1 {
 }
 
 .tab {
-    border: 1px solid rgb(3, 7, 253);
+    border: 2px solid rgb(3, 7, 253);
     margin-bottom: 15px;
     position: relative;
 }
@@ -70,26 +70,3 @@ img {
     transform: translateY(-50%);
 }
 
-/* .tab input[type=checkbox] + label::after {
-    content: "+";
-}
-  
-.tab input[type=checkbox]:checked + label::after {
-    transform: rotate(315deg);
-}
-
-.tab input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-}
-
-.tab label {
-    position: relative;
-    display: block;
-    padding: 0 0 0 1em;
-    font-weight: bold;
-    line-height: 3;
-    cursor: pointer;
-  }
- */
