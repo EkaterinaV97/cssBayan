@@ -1,0 +1,95 @@
+body {
+    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.tab {
+    border: 1px solid rgb(3, 7, 253);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.tab-title {
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.tab-title::after {
+    content: "+";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.tab-title:hover {
+    color: rgb(3, 7, 253);
+}
+
+.content {
+    display: none;
+    padding: 0px 80px;
+}
+
+img {
+    width: 550px;
+    height: 500px;
+}
+
+.tab-input {
+    -webkit-appearance: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.tab-input:checked + .content {
+    display: block;
+}
+
+.tab-input:checked ~ .tab-title::after {
+    content: "x";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+/* .tab input[type=checkbox] + label::after {
+    content: "+";
+}
+  
+.tab input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+}
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tab label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+  }
+ */
