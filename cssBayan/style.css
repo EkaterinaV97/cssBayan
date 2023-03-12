@@ -17,7 +17,6 @@ h1 {
 .tab {
     border: 2px solid rgb(3, 7, 253);
     margin-bottom: 15px;
-    position: relative;
 }
 
 .tab-title {
@@ -51,14 +50,18 @@ img {
 }
 
 .tab-input {
-    -webkit-appearance: none;
+    appearance: none;
     position: absolute;
     width: 0;
     height: 0;
 }
 
-.tab-input:checked + .content {
+.tab-input:checked ~ .content {
     display: block;
+}
+
+.tab-input:checked ~ .tab-title {
+    background-color: blue;
 }
 
 .tab-input:checked ~ .tab-title::after {
@@ -69,4 +72,3 @@ img {
     right: 15px;
     transform: translateY(-50%);
 }
-
